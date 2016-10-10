@@ -1,0 +1,34 @@
+Host balena
+    Hostname balena.bath.ac.uk
+    User lw827
+
+Host nickel
+    Hostname 138.38.24.75
+    User lucywhalley
+
+Host cobalt
+    Hostname chpc-cobalt.bath.ac.uk
+    User lucy
+
+Host noether
+    Hostname 138.38.6.64
+    User lucydot
+
+Host archerdot
+    Hostname login.archer.ac.uk
+    User lucydot
+
+Host archer
+    Hostname login.archer.ac.uk
+    User lucy
+
+Host sisu
+    Hostname sisu.csc.fi
+    User pr1uycul
+
+Host frisc
+    Hostname login.archer.ac.uk
+    User pr1uycu1
+
+Host *
+    ServerAliveInterval 60
