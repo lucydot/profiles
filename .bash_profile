@@ -7,6 +7,8 @@ alias delete-output='rm CHG CHGCAR CONTCAR DOSCAR EIGENVAL IBZKPT OSZICAR OUTCAR
 alias weatherbham='curl http://wttr.in/birmingham'
 alias weatherlondon='curl http://wttr.in/london'
 alias cpu='echo time $(uptime) && echo $(sysctl -n hw.ncpu) cores on $(hostname)'
+alias ipn="ipython notebook"
+alias sublime='open -a /Applications/Sublime\ Text.app/'
 
 # Music aliases thanks to Jarvist
 # Background noise; seen before elsewhere, but these are from: https://news.ycombinator.com/item?id=12851409
