@@ -1,4 +1,4 @@
-syntax on
+syntax enable
 filetype plugin indent on
 " show existing tab with 4 spaces width
 set tabstop=4
@@ -8,3 +8,5 @@ set shiftwidth=4
 set expandtab
 set cc=80
 set visualbell
+colorscheme turtles
+set background=dark
