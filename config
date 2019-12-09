@@ -1,6 +1,15 @@
+Host daint
+    Hostname daint.cscs.ch
+    User lwhalley
+    ProxyCommand ssh -Y lwhalley@ela.cscs.ch -W %h:%p
+ 
 Host balena
     Hostname balena.bath.ac.uk
     User lw827
+
+Host kelvin
+    Hostname 165.132.137.18
+    User lucydot
 
 Host nickel
     Hostname 138.38.24.75
@@ -10,25 +19,69 @@ Host cobalt
     Hostname chpc-cobalt.bath.ac.uk
     User lucy
 
-Host noether
-    Hostname 138.38.6.64
-    User lucydot
+Host archer
+    Hostname login.archer.ac.uk
+    User lucy
 
 Host archerdot
     Hostname login.archer.ac.uk
     User lucydot
 
+Host curie
+    Hostname 129.31.136.12
+    User lucydot
+
+Host curie2
+    Hostname 129.31.136.200
+    User lucydot
+    ProxyCommand ssh lw3016@sshgw.ic.ac.uk nc -q0 %h %p 2> /dev/null
+
+Host curie3
+    Hostname 129.31.136.106
+    User lucydot
+
+Host gateway
+    Hostname sshgw.ic.ac.uk
+    IdentityFile ~/.ssh/noether_rsa.pub
+    User lw3016
+
+Host noether
+    Hostname 138.38.6.64
+    User lucydot
+
 Host archer
+    IdentityFile ~/.ssh/noether_rsa
     Hostname login.archer.ac.uk
     User lucy
 
 Host sisu
     Hostname sisu.csc.fi
+    IdentityFile ~/.ssh/noether_rsa
     User pr1uycul
 
 Host frisc
     Hostname login.archer.ac.uk
     User pr1uycu1
 
+Host github.com
+    IdentityFile ~/.ssh/noether_rsa
+
+Host cx1
+    Hostname login.cx1.hpc.imperial.ac.uk
+    User lw3016
+
+Host cx2
+    Hostname login.cx2.hpc.imperial.ac.uk
+    User lw3016
+
+Host archerdotty
+    Hostname login.archer.ac.uk
+    User dotty
+    
 Host *
     ServerAliveInterval 60
+    AddKeysToAgent yes
+    UseKeychain yes
+    IdentityFile ~/.ssh/noether_rsa
+
+
