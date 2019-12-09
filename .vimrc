@@ -8,3 +8,4 @@ set shiftwidth=4
 set expandtab
 set cc=80
 set visualbell
+set background=light
